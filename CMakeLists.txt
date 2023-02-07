@@ -5,15 +5,7 @@ list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/CMake/modules/")
 
 set(CMAKE_C_STANDARD 11)
 
-add_subdirectory(lib)
+add_executable(kinetic src/main.c)
 
-add_library(${PROJECT_NAME} src/library.c)
+target_include_directories(kinetic PRIVATE src)
 
-target_include_directories(${PROJECT_NAME} PUBLIC include)
-target_include_directories(${PROJECT_NAME} PRIVATE src)
-
-target_link_libraries(${PROJECT_NAME})
-
-if (${PROJECT_NAME}_BUILD_TESTS)
-    add_subdirectory(test)
-endif ()

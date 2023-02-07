@@ -1,14 +1,14 @@
 # kinetic_build
 
-## build commands
-each build subcommand is it's own program. e.g. `kinetic new [options]` becomes `kinetic_new [options]`
+## Build Commands
+each build subcommand is its own program. e.g. `kinetic new [options]` becomes `kinetic_new [options]`
 
-## Project file format
+## Kinetic Project file format
 
-`<project_name>.kbp`:
+`<project_name>.kp`:
 ```
 name: "<project_name>"
-c_version: <version_number>
+c_version: <version_number> # defaults to 11
 version: <major>.<minor>.<patch>
 dependencies: [
 	{
