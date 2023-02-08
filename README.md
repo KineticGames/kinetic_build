@@ -1,7 +1,15 @@
 # kinetic_build
 
+## Local files
+In `~/.kinetic` all the programs are stored: 
+- `.kinetic`
+  - `actions`
+    - contains the executable that get executed when an action is called
+  - `dependencies`
+    - stores the URLs and latest known versions of dependencies
+
 ## Build Commands
-each build subcommand is its own program. e.g. `kinetic new [options]` becomes `kinetic_new [options]`
+Each build subcommand is its own program. e.g. `kinetic new [options]` becomes `kinetic_new [options]`
 
 ## Kinetic Project file format
 
